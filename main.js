@@ -4,11 +4,7 @@ function createCustomersDatabaseItem (customerObj){
 
 
 const template = `
-<script type ="text/javascript">
-window.onload = function what(){
-document.getElementById('hello').innerHTML = 'hi';
-};
-</script>
+
 
     <div class= "container">
       <div class ="thumbnail"><img src="${customerObj.picture.large}">
@@ -28,11 +24,11 @@ return template;
 
 
  let allHTML = "";
-let innerHTML = allHTML
+
 
 customers.results.forEach(function (item, idx, arr){
   allHTML += createCustomersDatabaseItem(item);
   console.log(allHTML);
 })
-const customersDOM = document.querySelectorAll('.customers')[0]
+const customersDOM = document.getElementById('.customers')[0]
 customersDOM.innerHTML = allHTML;

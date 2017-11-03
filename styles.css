@@ -3,6 +3,10 @@ body {
   padding: 0;
   background-color: white;
 }
+header{
+  display: flex;
+  justify-content: center;
+}
 
 .container {
   display: flex;
@@ -10,15 +14,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-.customers {
-  display: flex;
-  flex-wrap:wrap;
-  font-family: sans-serif;
-  margin: 20px;
-  padding-left: 20px;
-  padding-right:20px;
 
-}
 .thumbnail{
   display: flex;
   padding-left: 20px;
@@ -30,6 +26,15 @@ body {
    justify-content: center;
   width: 100px;
   height: auto;
+}
+.customers {
+  display: flex;
+  flex-wrap:wrap;
+  font-family: sans-serif;
+  margin: 20px;
+  padding-left: 20px;
+  padding-right:20px;
+
 }
 h1{
   text-transform: uppercase;
